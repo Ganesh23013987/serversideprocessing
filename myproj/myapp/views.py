@@ -12,8 +12,8 @@ def prismarea(request):
     context['h'] = "0"
     if request.method == 'POST':
         print("POST method is used")
-        l = request.POST.get('side','0')
-        b = request.POST.get('height','0')
+        s = request.POST.get('side','0')
+        h = request.POST.get('height','0')
         print('request=',request)
         print('side=',s)
         print('height=',h)
@@ -23,3 +23,12 @@ def prismarea(request):
         context['h'] = h
         print('Area=',area)
     return render(request,'myapp/math.html',context)
+
+
+
+
+
+
+
+
+
