@@ -143,4 +143,6 @@ def prismarea(request):
 ![Alt text](image.png)
 
 ## Result:
+Then, the program is successfully executed.
+
 
