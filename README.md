@@ -97,13 +97,7 @@ Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/
 </html>
 ```
 # Views.py:
-from django.shortcuts import render
-from django.shortcuts import render
-from django.template  import loader
-from django.shortcuts import render
-# Create your views here.
-
-
+```
 def prismarea(request):
     context={}
     context['area'] = "0"
@@ -122,7 +116,9 @@ def prismarea(request):
         context['h'] = h
         print('Area=',area)
     return render(request,'myapp/math.html',context)
+```
 # Result.html:
+```
 <!DOCTYPE html>
 <html>
     <head>
@@ -132,7 +128,7 @@ def prismarea(request):
         The result is {{result}}
     </body>
 </html>
-
+```
 
 
 
