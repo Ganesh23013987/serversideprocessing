@@ -94,7 +94,7 @@ padding-top: 20px;
 <body>
 <div class="edge">
 <div class="box">
-<h1>Area of a Prism</h1>
+<h1>Area of SquarePrism</h1>
 <form method="POST">
 {% csrf_token %}
 <div class="formelt">
