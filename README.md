@@ -6,27 +6,24 @@ To design a website to perform mathematical calculations in server side.
 ## DESIGN STEPS:
 
 ### Step 1:
-
-
+First fork  the given repository link and then copy your code.
 
 ### Step 2:
-
-
+Open visual studio and create a folder and then clone the copied link using 'git clone [your link]'and then activate Djangp.
 
 ### Step 3:
-
-
+Open thr folder and then inside the repository folder create myproj folder using 'django-admin startproject myproj' command.
+And then open myproj folder inside the myproj folder we can create a app folder called 'myapp' using 'python manage.py startapp [your app name]' command. 
 
 ### Step 4:
-
-
+open 'settings.py'inside the myproj folder and make some changes.
+And  then create a folder called 'templates' and then inside the templates create another folder (your app folder) named 'myapp'
 
 ### Step 5:
-
-
+Inside the myapp folder create 2 html files named 'mathh.html','result.html' and then paste the codes that are given below. 
+And then make the changes in 'url.py' and  'views.py'. Save all files and then run the code using 'python manage.py runserver [port number]'
 
 ### Step 6:
-
 Publish the website in the given URL.
 
 ## PROGRAM :
@@ -139,6 +136,6 @@ Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/
 
 
 ## Result:
-Then, the program is successfully executed.
+The website created and then program is successfully executed.
 
 
