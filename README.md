@@ -29,7 +29,7 @@ Publish the website in the given URL.
 ## PROGRAM :
 # Views.py:
 ```
-def prismarea(request):
+def Squareprism(request):
     context={}
     context['area'] = "0"
     context['s'] = "0"
@@ -55,7 +55,7 @@ def prismarea(request):
 <head>
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-<title>Area of Prism</title>
+<title>Area of SquarePrism</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <style type="text/css">
 body 
@@ -132,7 +132,9 @@ Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/
 ## OUTPUT:
 
 ### Home Page:
-<img width="851" alt="area of prism output" src="https://github.com/Ganesh23013987/serversideprocessing/assets/147473768/c673b8c8-0121-4376-84cd-5f7088f4ada6">
+<img width="687" alt="area of square prism" src="https://github.com/Ganesh23013987/serversideprocessing/assets/147473768/0e24d876-fdd2-4177-9aa4-a2236d08c4df">
+
+
 
 
 ## Result:
