@@ -30,6 +30,28 @@ To design a website to perform mathematical calculations in server side.
 Publish the website in the given URL.
 
 ## PROGRAM :
+# Views.py:
+```
+def prismarea(request):
+    context={}
+    context['area'] = "0"
+    context['s'] = "0"
+    context['h'] = "0"
+    if request.method == 'POST':
+        print("POST method is used")
+        s = request.POST.get('side','0')
+        h = request.POST.get('height','0')
+        print('request=',request)
+        print('side=',s)
+        print('height=',h)
+        area = 2*int(s) * int(s)+4*int(s)*int(h)
+        context['area'] = area
+        context['s'] = s
+        context['h'] = h
+        print('Area=',area)
+    return render(request,'myapp/math.html',context)
+```
+
 # Math.html:
 ```
 <html>
@@ -97,27 +119,6 @@ Area : <input type="text" name="area" value="{{area}}"></input>m<sup>2</sup><br/
 </html>
 ```
 
-# Views.py:
-```
-def prismarea(request):
-    context={}
-    context['area'] = "0"
-    context['s'] = "0"
-    context['h'] = "0"
-    if request.method == 'POST':
-        print("POST method is used")
-        s = request.POST.get('side','0')
-        h = request.POST.get('height','0')
-        print('request=',request)
-        print('side=',s)
-        print('height=',h)
-        area = 2*int(s) * int(s)+4*int(s)*int(h)
-        context['area'] = area
-        context['s'] = s
-        context['h'] = h
-        print('Area=',area)
-    return render(request,'myapp/math.html',context)
-```
 # Result.html:
 ```
 <!DOCTYPE html>
@@ -131,17 +132,11 @@ def prismarea(request):
 </html>
 ```
 
-
-
-
-
-
-
-
 ## OUTPUT:
 
 ### Home Page:
-![Alt text](image.png)
+<img width="851" alt="area of prism output" src="https://github.com/Ganesh23013987/serversideprocessing/assets/147473768/c673b8c8-0121-4376-84cd-5f7088f4ada6">
+
 
 ## Result:
 Then, the program is successfully executed.
